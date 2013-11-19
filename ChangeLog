@@ -1,0 +1,10 @@
+Wiki Plugin - linkmap
+======================
+
+0.1.0
+  date: 2013-11-17
+  changes:
+    - Refactored from wiki/client/linkmap into individual repo.
+    - Check for changes against Smallest-Federated-Wiki repo version
+      + two repo's have the same code.
+
