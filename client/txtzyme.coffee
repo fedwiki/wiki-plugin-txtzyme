@@ -88,9 +88,7 @@ bind = ($item, item) ->
     $item.get(0).getSequenceData = ->
       if response.length then response else oldresponse
 
-  frame = 0
   tick = ->
-    frame = frame%40 + 1
     now = new Date()
     arg = [now.getSeconds(), now.getMinutes(), now.getHours()]
     trigger 'SECOND', arg
@@ -100,7 +98,7 @@ bind = ($item, item) ->
 
   timer = null
   startTicking = ->
-    timer = setInterval tick, 25
+    timer = setInterval tick, 1000
     tick()
 
   setTimeout startTicking, 1000-(new Date().getMilliseconds())
