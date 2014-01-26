@@ -1,5 +1,5 @@
-txtzyme = require 'txtzyme'
-console.log txtzyme
+txtzyme = require '../client/txtzyme'
+expect = require 'expect.js'
 
 describe 'txtzyme plugin', ->
 
