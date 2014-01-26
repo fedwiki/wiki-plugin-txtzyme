@@ -14,7 +14,7 @@
     {
       "type": "txtzyme",
       "id": "bafdb5e64d92b391",
-      "text": "SECOND PULSE/A0 SAMPLE\n\nPULSE 4d 1o 50u A uu 0oi\nSAMPLE 50 {11sp 100u}"
+      "text": "SECOND PULSE SAMPLE\n\nPULSE 4d 1o 150u 0oi\nSAMPLE 50 {11sp 100u}"
     },
     {
       "type": "paragraph",
@@ -41,12 +41,12 @@
     {
       "type": "paragraph",
       "id": "b96abb3594fbfdf1",
-      "text": "On <b>SECOND</b> we PULSE then SAMPLE. We use the seconds argument to slowly lengthen the pulse."
+      "text": "On <b>SECOND</b> we PULSE then SAMPLE. This sends 50 sample values to the client each second."
     },
     {
       "type": "paragraph",
       "id": "24aee83d34d86633",
-      "text": "Say <b>PULSE/100</b> to send a 2A+50 = 250 µsec pulse. The output pin is returned to input when the pulse completes."
+      "text": "Say <b>PULSE</b> to send a 150 µsec pulse. The output pin is returned to input when the pulse completes."
     },
     {
       "type": "paragraph",
@@ -1574,6 +1574,36 @@
         "text": "SECOND PULSE/A0 SAMPLE\n\nPULSE 4d 1o 50u A uu 0oi\nSAMPLE 50 {11sp 100u}"
       },
       "date": 1361465077623
+    },
+    {
+      "type": "edit",
+      "id": "bafdb5e64d92b391",
+      "item": {
+        "type": "txtzyme",
+        "id": "bafdb5e64d92b391",
+        "text": "SECOND PULSE SAMPLE\n\nPULSE 4d 1o 150u 0oi\nSAMPLE 50 {11sp 100u}"
+      },
+      "date": 1390769614099
+    },
+    {
+      "type": "edit",
+      "id": "b96abb3594fbfdf1",
+      "item": {
+        "type": "paragraph",
+        "id": "b96abb3594fbfdf1",
+        "text": "On <b>SECOND</b> we PULSE then SAMPLE. This sends 50 sample values to the client each second."
+      },
+      "date": 1390769677354
+    },
+    {
+      "type": "edit",
+      "id": "24aee83d34d86633",
+      "item": {
+        "type": "paragraph",
+        "id": "24aee83d34d86633",
+        "text": "Say <b>PULSE</b> to send a 150 µsec pulse. The output pin is returned to input when the pulse completes."
+      },
+      "date": 1390769701631
     }
   ]
 }

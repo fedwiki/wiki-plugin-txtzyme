@@ -14,7 +14,7 @@
     {
       "type": "txtzyme",
       "id": "bafdb5e64d92b391",
-      "text": "OPEN _What Commands are Available?_ h"
+      "text": "OPEN h"
     },
     {
       "type": "paragraph",
@@ -283,6 +283,16 @@
         "text": "These commands will be sent to the remote Txtzyme interpreter to be performed there. The Txtzyme plugin supplements these commands with scheduling and data access commands that are performed by the Txtzyme plugin. Plugin commands are always written in upper case. The remote device will not see upper case plugin commands."
       },
       "date": 1374376271691
+    },
+    {
+      "type": "edit",
+      "id": "bafdb5e64d92b391",
+      "item": {
+        "type": "txtzyme",
+        "id": "bafdb5e64d92b391",
+        "text": "OPEN h"
+      },
+      "date": 1390769961561
     }
   ]
 }

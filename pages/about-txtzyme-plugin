@@ -14,7 +14,7 @@
     {
       "type": "txtzyme",
       "id": "bafdb5e64d92b391",
-      "text": "OPEN _What Version of Microcontroller?_ v"
+      "text": "OPEN v"
     },
     {
       "type": "paragraph",
@@ -936,6 +936,16 @@
         "text": "We can read from and write to electrical circuits by running small Txtzyme programs on microcontrollers attached to federated wiki servers. This plugin extends the Txtzyme language with words for running programs and collecting results over dedicated socket connections. [https://github.com/fedwiki/wiki-plugin-txtzyme github]"
       },
       "date": 1389191827579
+    },
+    {
+      "type": "edit",
+      "id": "bafdb5e64d92b391",
+      "item": {
+        "type": "txtzyme",
+        "id": "bafdb5e64d92b391",
+        "text": "OPEN v"
+      },
+      "date": 1390769877331
     }
   ]
 }
