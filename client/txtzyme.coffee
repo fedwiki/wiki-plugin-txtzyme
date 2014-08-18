@@ -112,8 +112,9 @@ bind = ($item, item) ->
   $(".main").on 'thumb', (evt, thumb) ->
     trigger 'THUMB', thumb
 
+  dialog = null
   $item.delegate '.rcvd', 'click', ->
-    wiki.dialog "Txtzyme Responses", """<pre>#{response.join "\n"}"""
+    dialog = wiki.dialog "Txtzyme Responses", """<pre>#{response.join "\n"}"""
 
   trigger = (word, arg=0) ->
     apply defn, word, arg, (message, stack, done) ->
@@ -122,7 +123,7 @@ bind = ($item, item) ->
       if socket
         progress (srept = " #{++sent} sent ") + rrept
         if response.length
-          window.dialog.html """<pre>#{response.join "\n"}"""
+          dialog?.html """<pre>#{response.join "\n"}"""
           $item.trigger 'sequence', [response]
         response = []
         socket.send message
