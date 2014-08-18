@@ -115,6 +115,7 @@ bind = ($item, item) ->
   dialog = null
   $item.delegate '.rcvd', 'click', ->
     dialog = wiki.dialog "Txtzyme Responses", """<pre>#{response.join "\n"}"""
+    dialog.on "dialogclose", -> dialog = null;
 
   trigger = (word, arg=0) ->
     apply defn, word, arg, (message, stack, done) ->
