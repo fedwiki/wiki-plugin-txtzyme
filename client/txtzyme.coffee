@@ -143,6 +143,7 @@ bind = ($item, item) ->
       if line
         progress srept + (rrept = "<span class=rcvd> #{++rcvd} rcvd #{line} </span>")
         response.push line
+        trigger line, response if line.match /^[A-Z][A-Z0-9]*$/
 
   socket.onclose = ->
     progress "closed"
