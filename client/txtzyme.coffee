@@ -123,16 +123,19 @@ bind = ($item, item) ->
       $item.find('p.report').html "#{todo}#{message}"
       if socket
         progress (srept = " #{++sent} sent ") + rrept
-        if response.length
-          dialog?.html """<pre>#{response.join "\n"}"""
-          $item.trigger 'sequence', [response]
-        response = []
+        frame()
         socket.send message
       setTimeout done, 200
 
   progress = (m) ->
     # wiki.log 'txtzyme', m
     $item.find('p.caption').html m
+
+  frame = ->
+    if response.length
+      dialog?.html """<pre>#{response.join "\n"}"""
+      $item.trigger 'sequence', [response]
+    [response, oldresponse] = [[], response]
 
   socket.onopen = ->
     progress "opened"
@@ -143,7 +146,9 @@ bind = ($item, item) ->
       if line
         progress srept + (rrept = "<span class=rcvd> #{++rcvd} rcvd #{line} </span>")
         response.push line
-        trigger line, response if line.match /^[A-Z][A-Z0-9]*$/
+        if line.match /^[A-Z][A-Z0-9]*$/
+          trigger line, response
+          frame()
 
   socket.onclose = ->
     progress "closed"
