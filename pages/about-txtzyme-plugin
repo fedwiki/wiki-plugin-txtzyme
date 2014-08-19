@@ -23,6 +23,11 @@
     },
     {
       "type": "paragraph",
+      "id": "21f18b8e74d8615e",
+      "text": "As a rule of thumb, think of upper-case as talking to the Txtzyme plugin in the browser with everything else going to the Txtzyme interpreter in the microcontroller."
+    },
+    {
+      "type": "paragraph",
       "id": "c8417afca46ab596",
       "text": "Read [[More About Txtzyme]] to learn more commands."
     },
@@ -47,6 +52,11 @@
       "text": "Say <b>SECOND</b>, <b>MINUTE</b>, <b>HOUR</b> and <b>DAY</b> to run repeatedly throughout the day."
     },
     {
+      "type": "code",
+      "id": "bd24ced9eef5a371",
+      "text": "HOUR 1o 1000m 0o"
+    },
+    {
       "type": "paragraph",
       "id": "3cfe3fbd4b43138d",
       "text": "Say <b>OPEN</b> to run when the server connection is opened."
@@ -67,6 +77,26 @@
       "text": "Other all-cap words define Txtzyme fragments that will be put together to make complete programs. When they appear first in a line it is a definition, elsewhere it is a use of the definition."
     },
     {
+      "type": "code",
+      "id": "8d3059996c89b7cf",
+      "text": "CHANT FEE FIE FOE FUM"
+    },
+    {
+      "type": "paragraph",
+      "id": "aed1754c86ba0163",
+      "text": "An all-cap _WORD_ bracketed by underscores will trigger WORD, but not until it is encounter by Txtzyme running on the microcontroller. "
+    },
+    {
+      "type": "code",
+      "id": "f65683469b9880f6",
+      "text": "BEEP 600{1o 500u 0o 500u} _BOOP_\nBOOP 500{1o 600u 0o 600u} _BEEP_"
+    },
+    {
+      "type": "paragraph",
+      "id": "819f7ab404a6ada9",
+      "text": "The underscore is the Txtzyme command for printing strings. The Txtzyme plugin recognizes the string as invoking a definition as a call-back, or string-back in this case. This lets us write safe infinite loops because the plugin stays involved."
+    },
+    {
       "type": "paragraph",
       "id": "73ec12cb6ef2cee8",
       "text": "<h3> Plugin Parameters"
@@ -75,6 +105,11 @@
       "type": "paragraph",
       "id": "3304b4410ba78341",
       "text": "Commands run by the clock have available to them an array with [sec, min, hr] as a parameter. Say <b>A</b> to access the whole parameter or say <b>A0</b>, <b>A1</b> or <b>A2</b> to access the individual elements."
+    },
+    {
+      "type": "code",
+      "id": "9e5a070b94dee41c",
+      "text": "HOUR A2{ 1o 1000m 0o 1000m }"
     },
     {
       "type": "paragraph",
@@ -100,6 +135,16 @@
       "type": "paragraph",
       "id": "4bc2e2e9c84584c3",
       "text": "Other all-caps words refer to Txtzyme fragments that may include parameter accessors. For example <b>FOO/43</b> calls FOO and sets the parameter to 43. To specify a parameter include it after the defined name separated by a slash. <b>FOO/B3</b> passes forward one bit of the current parameter."
+    },
+    {
+      "type": "paragraph",
+      "id": "0a5cd9853112a96b",
+      "text": "Commands run by string-back calls from Txtzyme will have an array of printed values as its argument."
+    },
+    {
+      "type": "code",
+      "id": "f9bdfa47840dc308",
+      "text": "LOOP 11s p _SAMPLE_ 200m _LOOP_"
     }
   ],
   "journal": [
@@ -956,6 +1001,438 @@
         "text": "Say <b>OPEN</b> to run when the server connection is opened."
       },
       "date": 1408324494625
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "aed1754c86ba0163",
+        "text": ""
+      },
+      "id": "aed1754c86ba0163",
+      "type": "add",
+      "after": "6b3a397e00c20fd9",
+      "date": 1408463740200
+    },
+    {
+      "type": "edit",
+      "id": "aed1754c86ba0163",
+      "item": {
+        "type": "paragraph",
+        "id": "aed1754c86ba0163",
+        "text": "An all-cap _WORD_ bracketed by underscores will trigger WORD, but not until it is encounter by Txtzyme running on the microcontroller. "
+      },
+      "date": 1408464167644
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f65683469b9880f6"
+      },
+      "id": "f65683469b9880f6",
+      "type": "add",
+      "after": "4bc2e2e9c84584c3",
+      "date": 1408464259180
+    },
+    {
+      "type": "edit",
+      "id": "f65683469b9880f6",
+      "item": {
+        "type": "code",
+        "id": "f65683469b9880f6",
+        "text": "BEEP 600 {1o 500u 0o 500} _BOOP_\nBOOP 500 {1o 600u 0o 600} _BEEP_"
+      },
+      "date": 1408464352115
+    },
+    {
+      "type": "move",
+      "order": [
+        "59a64ad63d3f60ee",
+        "eadd3feedc12b9e4",
+        "bafdb5e64d92b391",
+        "099673518694524d",
+        "c8417afca46ab596",
+        "ce810c99496870a5",
+        "9da8e83e2ed8ed29",
+        "7636a21766c6a598",
+        "135f1d15190fa48a",
+        "3cfe3fbd4b43138d",
+        "e2e5e2c6745c6825",
+        "ac38149d1c537128",
+        "6b3a397e00c20fd9",
+        "aed1754c86ba0163",
+        "f65683469b9880f6",
+        "73ec12cb6ef2cee8",
+        "3304b4410ba78341",
+        "fb24a21431cedec6",
+        "d2632542e802a519",
+        "b0331a8e789bc55e",
+        "22cfc1dd5098a268",
+        "4bc2e2e9c84584c3"
+      ],
+      "id": "f65683469b9880f6",
+      "date": 1408464369029
+    },
+    {
+      "type": "edit",
+      "id": "f65683469b9880f6",
+      "item": {
+        "type": "code",
+        "id": "f65683469b9880f6",
+        "text": "BEEP 600{1o 500u 0o 500} _BOOP_\nBOOP 500{1o 600u 0o 600} _BEEP_"
+      },
+      "date": 1408464400523
+    },
+    {
+      "type": "edit",
+      "id": "f65683469b9880f6",
+      "item": {
+        "type": "code",
+        "id": "f65683469b9880f6",
+        "text": "BEEP 600{1o 500u 0o 500u} _BOOP_\nBOOP 500{1o 600u 0o 600u} _BEEP_"
+      },
+      "date": 1408464413656
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0a5cd9853112a96b",
+        "text": ""
+      },
+      "id": "0a5cd9853112a96b",
+      "type": "add",
+      "after": "4bc2e2e9c84584c3",
+      "date": 1408464542046
+    },
+    {
+      "type": "edit",
+      "id": "0a5cd9853112a96b",
+      "item": {
+        "type": "paragraph",
+        "id": "0a5cd9853112a96b",
+        "text": "Commands run by string-back calls from Txtzyme will have an array of printed values as its argument."
+      },
+      "date": 1408464622158
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f9bdfa47840dc308"
+      },
+      "id": "f9bdfa47840dc308",
+      "type": "add",
+      "after": "0a5cd9853112a96b",
+      "date": 1408464647615
+    },
+    {
+      "type": "edit",
+      "id": "f9bdfa47840dc308",
+      "item": {
+        "type": "code",
+        "id": "f9bdfa47840dc308",
+        "text": "LOOP 11sp _SAMPLE_ 200m _LOOP_"
+      },
+      "date": 1408464740823
+    },
+    {
+      "type": "edit",
+      "id": "f9bdfa47840dc308",
+      "item": {
+        "type": "code",
+        "id": "f9bdfa47840dc308",
+        "text": "LOOP 11s p _SAMPLE_ 200m _LOOP_"
+      },
+      "date": 1408464765621
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "819f7ab404a6ada9",
+        "text": ""
+      },
+      "id": "819f7ab404a6ada9",
+      "type": "add",
+      "after": "aed1754c86ba0163",
+      "date": 1408464877545
+    },
+    {
+      "type": "edit",
+      "id": "819f7ab404a6ada9",
+      "item": {
+        "type": "paragraph",
+        "id": "819f7ab404a6ada9",
+        "text": "The underscore is the Txtzyme command for printing strings. The Txtzyme plugin recognizes the string as invoking a definition as a call-back, or string-back in this case. "
+      },
+      "date": 1408464983717
+    },
+    {
+      "type": "edit",
+      "id": "819f7ab404a6ada9",
+      "item": {
+        "type": "paragraph",
+        "id": "819f7ab404a6ada9",
+        "text": "The underscore is the Txtzyme command for printing strings. The Txtzyme plugin recognizes the string as invoking a definition as a call-back, or string-back in this case. This lets us write safe infinite loops because the plugin stays involved."
+      },
+      "date": 1408465053860
+    },
+    {
+      "type": "move",
+      "order": [
+        "59a64ad63d3f60ee",
+        "eadd3feedc12b9e4",
+        "bafdb5e64d92b391",
+        "099673518694524d",
+        "c8417afca46ab596",
+        "ce810c99496870a5",
+        "9da8e83e2ed8ed29",
+        "7636a21766c6a598",
+        "135f1d15190fa48a",
+        "3cfe3fbd4b43138d",
+        "e2e5e2c6745c6825",
+        "ac38149d1c537128",
+        "6b3a397e00c20fd9",
+        "aed1754c86ba0163",
+        "f65683469b9880f6",
+        "819f7ab404a6ada9",
+        "73ec12cb6ef2cee8",
+        "3304b4410ba78341",
+        "fb24a21431cedec6",
+        "d2632542e802a519",
+        "b0331a8e789bc55e",
+        "22cfc1dd5098a268",
+        "4bc2e2e9c84584c3",
+        "0a5cd9853112a96b",
+        "f9bdfa47840dc308"
+      ],
+      "id": "819f7ab404a6ada9",
+      "date": 1408465057610
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8d3059996c89b7cf"
+      },
+      "id": "8d3059996c89b7cf",
+      "type": "add",
+      "after": "f9bdfa47840dc308",
+      "date": 1408465086815
+    },
+    {
+      "type": "move",
+      "order": [
+        "59a64ad63d3f60ee",
+        "eadd3feedc12b9e4",
+        "bafdb5e64d92b391",
+        "099673518694524d",
+        "c8417afca46ab596",
+        "ce810c99496870a5",
+        "9da8e83e2ed8ed29",
+        "7636a21766c6a598",
+        "135f1d15190fa48a",
+        "3cfe3fbd4b43138d",
+        "e2e5e2c6745c6825",
+        "ac38149d1c537128",
+        "6b3a397e00c20fd9",
+        "8d3059996c89b7cf",
+        "aed1754c86ba0163",
+        "f65683469b9880f6",
+        "819f7ab404a6ada9",
+        "73ec12cb6ef2cee8",
+        "3304b4410ba78341",
+        "fb24a21431cedec6",
+        "d2632542e802a519",
+        "b0331a8e789bc55e",
+        "22cfc1dd5098a268",
+        "4bc2e2e9c84584c3",
+        "0a5cd9853112a96b",
+        "f9bdfa47840dc308"
+      ],
+      "id": "8d3059996c89b7cf",
+      "date": 1408465098778
+    },
+    {
+      "type": "edit",
+      "id": "8d3059996c89b7cf",
+      "item": {
+        "type": "code",
+        "id": "8d3059996c89b7cf",
+        "text": "CHANT FEE FIE FOE FUM"
+      },
+      "date": 1408465135923
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "bd24ced9eef5a371"
+      },
+      "id": "bd24ced9eef5a371",
+      "type": "add",
+      "after": "f9bdfa47840dc308",
+      "date": 1408471072787
+    },
+    {
+      "type": "move",
+      "order": [
+        "59a64ad63d3f60ee",
+        "eadd3feedc12b9e4",
+        "bafdb5e64d92b391",
+        "099673518694524d",
+        "c8417afca46ab596",
+        "ce810c99496870a5",
+        "9da8e83e2ed8ed29",
+        "7636a21766c6a598",
+        "135f1d15190fa48a",
+        "bd24ced9eef5a371",
+        "3cfe3fbd4b43138d",
+        "e2e5e2c6745c6825",
+        "ac38149d1c537128",
+        "6b3a397e00c20fd9",
+        "8d3059996c89b7cf",
+        "aed1754c86ba0163",
+        "f65683469b9880f6",
+        "819f7ab404a6ada9",
+        "73ec12cb6ef2cee8",
+        "3304b4410ba78341",
+        "fb24a21431cedec6",
+        "d2632542e802a519",
+        "b0331a8e789bc55e",
+        "22cfc1dd5098a268",
+        "4bc2e2e9c84584c3",
+        "0a5cd9853112a96b",
+        "f9bdfa47840dc308"
+      ],
+      "id": "bd24ced9eef5a371",
+      "date": 1408471084043
+    },
+    {
+      "type": "edit",
+      "id": "bd24ced9eef5a371",
+      "item": {
+        "type": "code",
+        "id": "bd24ced9eef5a371",
+        "text": "HOUR 1o 1000m 0o"
+      },
+      "date": 1408471229960
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "9e5a070b94dee41c"
+      },
+      "id": "9e5a070b94dee41c",
+      "type": "add",
+      "after": "f9bdfa47840dc308",
+      "date": 1408471258466
+    },
+    {
+      "type": "move",
+      "order": [
+        "59a64ad63d3f60ee",
+        "eadd3feedc12b9e4",
+        "bafdb5e64d92b391",
+        "099673518694524d",
+        "c8417afca46ab596",
+        "ce810c99496870a5",
+        "9da8e83e2ed8ed29",
+        "7636a21766c6a598",
+        "135f1d15190fa48a",
+        "bd24ced9eef5a371",
+        "3cfe3fbd4b43138d",
+        "e2e5e2c6745c6825",
+        "ac38149d1c537128",
+        "6b3a397e00c20fd9",
+        "8d3059996c89b7cf",
+        "aed1754c86ba0163",
+        "f65683469b9880f6",
+        "819f7ab404a6ada9",
+        "73ec12cb6ef2cee8",
+        "3304b4410ba78341",
+        "fb24a21431cedec6",
+        "9e5a070b94dee41c",
+        "d2632542e802a519",
+        "b0331a8e789bc55e",
+        "22cfc1dd5098a268",
+        "4bc2e2e9c84584c3",
+        "0a5cd9853112a96b",
+        "f9bdfa47840dc308"
+      ],
+      "id": "9e5a070b94dee41c",
+      "date": 1408471265359
+    },
+    {
+      "type": "move",
+      "order": [
+        "59a64ad63d3f60ee",
+        "eadd3feedc12b9e4",
+        "bafdb5e64d92b391",
+        "099673518694524d",
+        "c8417afca46ab596",
+        "ce810c99496870a5",
+        "9da8e83e2ed8ed29",
+        "7636a21766c6a598",
+        "135f1d15190fa48a",
+        "bd24ced9eef5a371",
+        "3cfe3fbd4b43138d",
+        "e2e5e2c6745c6825",
+        "ac38149d1c537128",
+        "6b3a397e00c20fd9",
+        "8d3059996c89b7cf",
+        "aed1754c86ba0163",
+        "f65683469b9880f6",
+        "819f7ab404a6ada9",
+        "73ec12cb6ef2cee8",
+        "3304b4410ba78341",
+        "9e5a070b94dee41c",
+        "fb24a21431cedec6",
+        "d2632542e802a519",
+        "b0331a8e789bc55e",
+        "22cfc1dd5098a268",
+        "4bc2e2e9c84584c3",
+        "0a5cd9853112a96b",
+        "f9bdfa47840dc308"
+      ],
+      "id": "9e5a070b94dee41c",
+      "date": 1408471273682
+    },
+    {
+      "type": "edit",
+      "id": "9e5a070b94dee41c",
+      "item": {
+        "type": "code",
+        "id": "9e5a070b94dee41c",
+        "text": "HOUR A2 { 1o 1000m 0o 1000m }"
+      },
+      "date": 1408471331284
+    },
+    {
+      "type": "edit",
+      "id": "9e5a070b94dee41c",
+      "item": {
+        "type": "code",
+        "id": "9e5a070b94dee41c",
+        "text": "HOUR A2{ 1o 1000m 0o 1000m }"
+      },
+      "date": 1408471344659
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "21f18b8e74d8615e",
+        "text": ""
+      },
+      "id": "21f18b8e74d8615e",
+      "type": "add",
+      "after": "099673518694524d",
+      "date": 1408471438097
+    },
+    {
+      "type": "edit",
+      "id": "21f18b8e74d8615e",
+      "item": {
+        "type": "paragraph",
+        "id": "21f18b8e74d8615e",
+        "text": "As a rule of thumb, think of upper-case as talking to the Txtzyme plugin in the browser with everything else going to the Txtzyme interpreter in the microcontroller."
+      },
+      "date": 1408471516732
     }
   ]
 }
