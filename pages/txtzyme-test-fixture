@@ -1,0 +1,463 @@
+{
+  "title": "Txtzyme Test Fixture",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "1e3d2a0b272cd380",
+      "text": "The Txtzyme plugin is distributed with examples for an appropriately configured Teensy 2 microcontroller."
+    },
+    {
+      "type": "paragraph",
+      "id": "f2b77a29e9531d62",
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "id": "8b6ce319521b110b",
+      "text": "<h3> Devices"
+    },
+    {
+      "type": "paragraph",
+      "id": "d85c7017082dcedf",
+      "text": "Our examples assume that specific devices have been connected to specific Teensy pins. Pins are referred to by a pin number, 0 to 7, and a port number a to f."
+    },
+    {
+      "type": "paragraph",
+      "id": "d0d9a106172d9f61",
+      "text": "An LED is connected to digital pin 6d. On some devices a 1 will light the LED, on others a 0 lights the led."
+    },
+    {
+      "type": "paragraph",
+      "id": "c5b03f82d4573727",
+      "text": "A piezoelectric speaker is connected to digital pin 4d and ground. Pin 4d is also ADC channel 11."
+    },
+    {
+      "type": "paragraph",
+      "id": "c60b9d4912f7456a",
+      "text": "A model HDLX-2416 alphanumeric LED display is connected such that its power and ground connect to the Teensy 2's power and ground."
+    },
+    {
+      "type": "paragraph",
+      "id": "8ea0bcf366c6b057",
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "id": "3fc84a305abcdb8b",
+      "text": "<h3> Interpreter"
+    },
+    {
+      "type": "paragraph",
+      "id": "9a24e4cfe3544d76",
+      "text": "The Txtzyme interpreter must be programmed into the Teensy 2 microcontroller before connecting it to the server with a USB cable."
+    },
+    {
+      "type": "paragraph",
+      "id": "98f4853bba7801c1",
+      "text": "See [[Pre-Built Txtzyme Hex Files and More]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "0a4c545e92d78b68",
+      "text": "Paul Stoffregen describes how to connect a Teensy and load a program using the part's preprogrammed boot loader and the download program he provides. [https://www.pjrc.com/teensy/first_use.html webpage]"
+    },
+    {
+      "type": "paragraph",
+      "id": "23cdc69e283c179b",
+      "text": "The interpreter is programmed with a single, reused, device id that appears at a known device address in the /dev space in Linux or MacOS. Other configurations are possible but not recognized automatically."
+    },
+    {
+      "type": "paragraph",
+      "id": "0df6e95147a9573e",
+      "text": "The interpreter consists of a two page fetch-execute loop along with a handful of subroutines for reading/writing from the on-chip USB interface. [https://github.com/WardCunningham/Txtzyme github]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Txtzyme Test Fixture",
+        "story": []
+      },
+      "date": 1408412413773
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1e3d2a0b272cd380"
+      },
+      "id": "1e3d2a0b272cd380",
+      "type": "add",
+      "date": 1408412416198
+    },
+    {
+      "type": "edit",
+      "id": "1e3d2a0b272cd380",
+      "item": {
+        "type": "paragraph",
+        "id": "1e3d2a0b272cd380",
+        "text": "The Txtzyme plugin is distributed with examples for an appropriately configured Teensy 2 microcontroller."
+      },
+      "date": 1408412547744
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f2b77a29e9531d62",
+        "text": ""
+      },
+      "id": "f2b77a29e9531d62",
+      "type": "add",
+      "after": "1e3d2a0b272cd380",
+      "date": 1408412547759
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8b6ce319521b110b",
+        "text": ""
+      },
+      "id": "8b6ce319521b110b",
+      "type": "add",
+      "after": "f2b77a29e9531d62",
+      "date": 1408412569153
+    },
+    {
+      "type": "edit",
+      "id": "8b6ce319521b110b",
+      "item": {
+        "type": "paragraph",
+        "id": "8b6ce319521b110b",
+        "text": "<h3> Devices"
+      },
+      "date": 1408412645360
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "d85c7017082dcedf",
+        "text": ""
+      },
+      "id": "d85c7017082dcedf",
+      "type": "add",
+      "after": "8b6ce319521b110b",
+      "date": 1408412645376
+    },
+    {
+      "type": "edit",
+      "id": "d85c7017082dcedf",
+      "item": {
+        "type": "paragraph",
+        "id": "d85c7017082dcedf",
+        "text": "Our examples assume that specific devices have been connected to specific Teensy pins."
+      },
+      "date": 1408412943659
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "15e366a2c3596784",
+        "text": ""
+      },
+      "id": "15e366a2c3596784",
+      "type": "add",
+      "after": "d85c7017082dcedf",
+      "date": 1408412943672
+    },
+    {
+      "type": "remove",
+      "id": "15e366a2c3596784",
+      "date": 1408412954892
+    },
+    {
+      "type": "edit",
+      "id": "d85c7017082dcedf",
+      "item": {
+        "type": "paragraph",
+        "id": "d85c7017082dcedf",
+        "text": "Our examples assume that specific devices have been connected to specific Teensy pins. Pins are referred to by a pin number, 0 to 7, and a port number a to f."
+      },
+      "date": 1408412997417
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "d0d9a106172d9f61",
+        "text": ""
+      },
+      "id": "d0d9a106172d9f61",
+      "type": "add",
+      "after": "d85c7017082dcedf",
+      "date": 1408412997432
+    },
+    {
+      "type": "edit",
+      "id": "d0d9a106172d9f61",
+      "item": {
+        "type": "paragraph",
+        "id": "d0d9a106172d9f61",
+        "text": "An LED is connected to digital pin 6d. On some devices a 1 will light the LED, on others a 0 lights the led."
+      },
+      "date": 1408413060607
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8ea0bcf366c6b057",
+        "text": ""
+      },
+      "id": "8ea0bcf366c6b057",
+      "type": "add",
+      "after": "d0d9a106172d9f61",
+      "date": 1408413060618
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c5b03f82d4573727",
+        "text": ""
+      },
+      "id": "c5b03f82d4573727",
+      "type": "add",
+      "after": "d0d9a106172d9f61",
+      "date": 1408413204377
+    },
+    {
+      "type": "edit",
+      "id": "c5b03f82d4573727",
+      "item": {
+        "type": "paragraph",
+        "id": "c5b03f82d4573727",
+        "text": "A piezoelectric speaker is connected to digital pin 4d and ground. Pin 4d is also ADC channel 11."
+      },
+      "date": 1408413263002
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c60b9d4912f7456a",
+        "text": ""
+      },
+      "id": "c60b9d4912f7456a",
+      "type": "add",
+      "after": "c5b03f82d4573727",
+      "date": 1408413263018
+    },
+    {
+      "type": "edit",
+      "id": "c60b9d4912f7456a",
+      "item": {
+        "type": "paragraph",
+        "id": "c60b9d4912f7456a",
+        "text": "A model HDLX-2416 alphanumeric LED display is connected such that its power and ground connect to the Teensy 2's power and ground. The remaining uncommitted Teensy pins are appropriately configured and addressed by the example."
+      },
+      "date": 1408413410211
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "bfc5c1a98b7a1e8e",
+        "text": ""
+      },
+      "id": "bfc5c1a98b7a1e8e",
+      "type": "add",
+      "after": "c60b9d4912f7456a",
+      "date": 1408413410232
+    },
+    {
+      "type": "remove",
+      "id": "bfc5c1a98b7a1e8e",
+      "date": 1408413415030
+    },
+    {
+      "type": "edit",
+      "id": "c60b9d4912f7456a",
+      "item": {
+        "type": "paragraph",
+        "id": "c60b9d4912f7456a",
+        "text": "A model HDLX-2416 alphanumeric LED display is connected such that its power and ground connect to the Teensy 2's power and ground."
+      },
+      "date": 1408413419278
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3fc84a305abcdb8b"
+      },
+      "id": "3fc84a305abcdb8b",
+      "type": "add",
+      "after": "8ea0bcf366c6b057",
+      "date": 1408413561323
+    },
+    {
+      "type": "edit",
+      "id": "3fc84a305abcdb8b",
+      "item": {
+        "type": "paragraph",
+        "id": "3fc84a305abcdb8b",
+        "text": "<h3> Interpreter"
+      },
+      "date": 1408413576715
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9a24e4cfe3544d76",
+        "text": ""
+      },
+      "id": "9a24e4cfe3544d76",
+      "type": "add",
+      "after": "3fc84a305abcdb8b",
+      "date": 1408413576735
+    },
+    {
+      "type": "edit",
+      "id": "9a24e4cfe3544d76",
+      "item": {
+        "type": "paragraph",
+        "id": "9a24e4cfe3544d76",
+        "text": "The Txtzyme interpreter must be programmed into the Teensy 2 microcontroller before connecting it to the server with a USB cable."
+      },
+      "date": 1408413746199
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "23cdc69e283c179b",
+        "text": ""
+      },
+      "id": "23cdc69e283c179b",
+      "type": "add",
+      "after": "9a24e4cfe3544d76",
+      "date": 1408413746215
+    },
+    {
+      "type": "edit",
+      "id": "23cdc69e283c179b",
+      "item": {
+        "type": "paragraph",
+        "id": "23cdc69e283c179b",
+        "text": "The interpreter is programmed with a single, reused, device id that appears at a known device address in the /dev space in Linux or MacOS. Other configurations are possible but not recognized automatically."
+      },
+      "date": 1408413855826
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "258f1e7269c3175d",
+        "text": ""
+      },
+      "id": "258f1e7269c3175d",
+      "type": "add",
+      "after": "23cdc69e283c179b",
+      "date": 1408413855838
+    },
+    {
+      "type": "remove",
+      "id": "258f1e7269c3175d",
+      "date": 1408413915093
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0df6e95147a9573e"
+      },
+      "id": "0df6e95147a9573e",
+      "type": "add",
+      "after": "23cdc69e283c179b",
+      "date": 1408462912894
+    },
+    {
+      "type": "edit",
+      "id": "0df6e95147a9573e",
+      "item": {
+        "type": "paragraph",
+        "id": "0df6e95147a9573e",
+        "text": "The interpreter consists of a two page fetch-execute loop along with a handful of subroutines for reading/writing from the on-chip USB interface. [https://github.com/WardCunningham/Txtzyme github]"
+      },
+      "date": 1408463097825
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "98f4853bba7801c1",
+        "text": ""
+      },
+      "id": "98f4853bba7801c1",
+      "type": "add",
+      "after": "0df6e95147a9573e",
+      "date": 1408463193934
+    },
+    {
+      "type": "edit",
+      "id": "98f4853bba7801c1",
+      "item": {
+        "type": "paragraph",
+        "id": "98f4853bba7801c1",
+        "text": "See [[Pre-Built Txtzyme Hex Files and More]]"
+      },
+      "date": 1408463200363
+    },
+    {
+      "type": "move",
+      "order": [
+        "1e3d2a0b272cd380",
+        "f2b77a29e9531d62",
+        "8b6ce319521b110b",
+        "d85c7017082dcedf",
+        "d0d9a106172d9f61",
+        "c5b03f82d4573727",
+        "c60b9d4912f7456a",
+        "8ea0bcf366c6b057",
+        "3fc84a305abcdb8b",
+        "9a24e4cfe3544d76",
+        "98f4853bba7801c1",
+        "23cdc69e283c179b",
+        "0df6e95147a9573e"
+      ],
+      "id": "98f4853bba7801c1",
+      "date": 1408463278639
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0a4c545e92d78b68",
+        "text": ""
+      },
+      "id": "0a4c545e92d78b68",
+      "type": "add",
+      "after": "98f4853bba7801c1",
+      "date": 1408463388828
+    },
+    {
+      "type": "edit",
+      "id": "0a4c545e92d78b68",
+      "item": {
+        "type": "paragraph",
+        "id": "0a4c545e92d78b68",
+        "text": "Paul Sofregen "
+      },
+      "date": 1408463518470
+    },
+    {
+      "type": "edit",
+      "id": "0a4c545e92d78b68",
+      "item": {
+        "type": "paragraph",
+        "id": "0a4c545e92d78b68",
+        "text": "Paul Stoffregen describes how to connect a Teensy and load a program using the part's preprogrammed boot loader and the download program he provides."
+      },
+      "date": 1408463637983
+    },
+    {
+      "type": "edit",
+      "id": "0a4c545e92d78b68",
+      "item": {
+        "type": "paragraph",
+        "id": "0a4c545e92d78b68",
+        "text": "Paul Stoffregen describes how to connect a Teensy and load a program using the part's preprogrammed boot loader and the download program he provides. [https://www.pjrc.com/teensy/first_use.html webpage]"
+      },
+      "date": 1408463659965
+    }
+  ]
+}

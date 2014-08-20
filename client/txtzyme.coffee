@@ -112,8 +112,10 @@ bind = ($item, item) ->
   $(".main").on 'thumb', (evt, thumb) ->
     trigger 'THUMB', thumb
 
+  dialog = null
   $item.delegate '.rcvd', 'click', ->
-    wiki.dialog "Txtzyme Responses", """<pre>#{response.join "\n"}"""
+    dialog = wiki.dialog "Txtzyme Responses", """<pre>#{response.join "\n"}"""
+    dialog.on "dialogclose", -> dialog = null;
 
   trigger = (word, arg=0) ->
     apply defn, word, arg, (message, stack, done) ->
@@ -121,16 +123,19 @@ bind = ($item, item) ->
       $item.find('p.report').html "#{todo}#{message}"
       if socket
         progress (srept = " #{++sent} sent ") + rrept
-        if response.length
-          window.dialog.html """<pre>#{response.join "\n"}"""
-          $item.trigger 'sequence', [response]
-        response = []
+        frame()
         socket.send message
       setTimeout done, 200
 
   progress = (m) ->
     # wiki.log 'txtzyme', m
     $item.find('p.caption').html m
+
+  frame = ->
+    if response.length
+      dialog?.html """<pre>#{response.join "\n"}"""
+      $item.trigger 'sequence', [response]
+    [response, oldresponse] = [[], response]
 
   socket.onopen = ->
     progress "opened"
@@ -141,6 +146,9 @@ bind = ($item, item) ->
       if line
         progress srept + (rrept = "<span class=rcvd> #{++rcvd} rcvd #{line} </span>")
         response.push line
+        if line.match /^[A-Z][A-Z0-9]*$/
+          trigger line, response
+          frame()
 
   socket.onclose = ->
     progress "closed"
