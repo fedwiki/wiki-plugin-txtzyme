@@ -12,7 +12,7 @@
       "text": "THUMB 6d 1o 5m 0o _thumb_\nSECOND 6d 1o 200m 6d 0o _blink_\nBEEP 4d200{1o500u0o500u}"
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "00dc97b2c32289c3",
       "text": "On <b>SECOND</b> we blink for 200 milliseconds."
     },
@@ -226,7 +226,7 @@
       "type": "chart"
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "ac77e64a6e8f0037",
       "text": "On <b>THUMB</b> we blink for a short 5 milliseconds."
     },
@@ -241,7 +241,7 @@
       "text": "See also [[D3 Line]] for more thumb event handling."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "51ce52616708dba5",
       "text": "Say <b>BEEP</b> to play a 200 millisecond long beep through a speaker connected to pin 4d. Replace the 200m above with BEEP to hear, rather than see, the blink."
     }
@@ -1403,6 +1403,37 @@
         "text": "Say <b>BEEP</b> to play a 200 millisecond long beep through a speaker connected to pin 4d. Replace the 200m above with BEEP to hear, rather than see, the blink."
       },
       "date": 1361396252593
+    },
+    {
+      "type": "edit",
+      "id": "00dc97b2c32289c3",
+      "item": {
+        "type": "html",
+        "id": "00dc97b2c32289c3",
+        "text": "On <b>SECOND</b> we blink for 200 milliseconds."
+      },
+      "date": 1418372580081
+    },
+    {
+      "type": "edit",
+      "id": "ac77e64a6e8f0037",
+      "item": {
+        "type": "html",
+        "id": "ac77e64a6e8f0037",
+        "text": "On <b>THUMB</b> we blink for a short 5 milliseconds."
+      },
+      "date": 1418372582739
+    },
+    {
+      "type": "edit",
+      "id": "51ce52616708dba5",
+      "item": {
+        "type": "html",
+        "id": "51ce52616708dba5",
+        "text": "Say <b>BEEP</b> to play a 200 millisecond long beep through a speaker connected to pin 4d. Replace the 200m above with BEEP to hear, rather than see, the blink."
+      },
+      "date": 1418372585241
     }
-  ]
+  ],
+  "plugin": "txtzyme"
 }

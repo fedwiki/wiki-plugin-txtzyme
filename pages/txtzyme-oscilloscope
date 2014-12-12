@@ -22,7 +22,7 @@
       "text": ""
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "ab9107bbf7920d44",
       "text": "The most recent sample shows in the status linke. Click <b>rcvd</b> to see more analog samples."
     },
@@ -39,17 +39,17 @@
       "text": "Try rendering with [[D3 Line]]."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "b96abb3594fbfdf1",
       "text": "On <b>SECOND</b> we PULSE then SAMPLE. This sends 50 sample values to the client each second."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "24aee83d34d86633",
       "text": "Say <b>PULSE</b> to send a 150 µsec pulse. The output pin is returned to input when the pulse completes."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "7657308ed05eb8b1",
       "text": "Say <b>SAMPLE</b> to capture 50 samples at about 200 µsec intervals. Each Txtzyme character takes about 10 µsec to execute. We add to this an additional 100 µsec pause."
     }
@@ -1604,6 +1604,47 @@
         "text": "Say <b>PULSE</b> to send a 150 µsec pulse. The output pin is returned to input when the pulse completes."
       },
       "date": 1390769701631
+    },
+    {
+      "type": "edit",
+      "id": "ab9107bbf7920d44",
+      "item": {
+        "type": "html",
+        "id": "ab9107bbf7920d44",
+        "text": "The most recent sample shows in the status linke. Click <b>rcvd</b> to see more analog samples."
+      },
+      "date": 1418372703099
+    },
+    {
+      "type": "edit",
+      "id": "b96abb3594fbfdf1",
+      "item": {
+        "type": "html",
+        "id": "b96abb3594fbfdf1",
+        "text": "On <b>SECOND</b> we PULSE then SAMPLE. This sends 50 sample values to the client each second."
+      },
+      "date": 1418372710939
+    },
+    {
+      "type": "edit",
+      "id": "24aee83d34d86633",
+      "item": {
+        "type": "html",
+        "id": "24aee83d34d86633",
+        "text": "Say <b>PULSE</b> to send a 150 µsec pulse. The output pin is returned to input when the pulse completes."
+      },
+      "date": 1418372712019
+    },
+    {
+      "type": "edit",
+      "id": "7657308ed05eb8b1",
+      "item": {
+        "type": "html",
+        "id": "7657308ed05eb8b1",
+        "text": "Say <b>SAMPLE</b> to capture 50 samples at about 200 µsec intervals. Each Txtzyme character takes about 10 µsec to execute. We add to this an additional 100 µsec pause."
+      },
+      "date": 1418372713195
     }
-  ]
+  ],
+  "plugin": "txtzyme"
 }

@@ -17,14 +17,14 @@
       "text": "OPEN h"
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "c9742561ccc55dd5",
       "text": "Click <b>rcvd</b> to see the full report for the connected device."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "a6c9aa4565e71acd",
-      "text": "<h3> What Commands are Available?"
+      "text": "<h3>What Commands are Available?</h3>"
     },
     {
       "type": "paragraph",
@@ -293,6 +293,37 @@
         "text": "OPEN h"
       },
       "date": 1390769961561
+    },
+    {
+      "type": "edit",
+      "id": "c9742561ccc55dd5",
+      "item": {
+        "type": "html",
+        "id": "c9742561ccc55dd5",
+        "text": "Click <b>rcvd</b> to see the full report for the connected device."
+      },
+      "date": 1418372382632
+    },
+    {
+      "type": "edit",
+      "id": "a6c9aa4565e71acd",
+      "item": {
+        "type": "html",
+        "id": "a6c9aa4565e71acd",
+        "text": "<h3> What Commands are Available?"
+      },
+      "date": 1418372541945
+    },
+    {
+      "type": "edit",
+      "id": "a6c9aa4565e71acd",
+      "item": {
+        "type": "html",
+        "id": "a6c9aa4565e71acd",
+        "text": "<h3>What Commands are Available?</h3>"
+      },
+      "date": 1418372550815
     }
-  ]
+  ],
+  "plugin": "txtzyme"
 }
