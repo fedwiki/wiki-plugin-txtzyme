@@ -37,9 +37,9 @@
       "text": "See [[More Txtzyme Examples]] in wiki and beyond."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "9da8e83e2ed8ed29",
-      "text": "<h3> Plugin Commands"
+      "text": "<h3>Plugin Commands</h3>"
     },
     {
       "type": "paragraph",
@@ -47,7 +47,7 @@
       "text": "The plugin adds commands to Txtzyme that run in your browser. These are words written all-caps and usually first thing on a line."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "135f1d15190fa48a",
       "text": "Say <b>SECOND</b>, <b>MINUTE</b>, <b>HOUR</b> and <b>DAY</b> to run repeatedly throughout the day."
     },
@@ -57,17 +57,17 @@
       "text": "HOUR 1o 1000m 0o"
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "3cfe3fbd4b43138d",
       "text": "Say <b>OPEN</b> to run when the server connection is opened."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "e2e5e2c6745c6825",
       "text": "Say <b>THUMB</b> to run when scrubbing wiki data."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "ac38149d1c537128",
       "text": "Say <b>NL</b> to run the program so far generated. (NL is short for newline, the traditional Txtzyme go command.)"
     },
@@ -97,12 +97,12 @@
       "text": "The underscore is the Txtzyme command for printing strings. The Txtzyme plugin recognizes the string as invoking a definition as a call-back, or string-back in this case. This lets us write safe infinite loops because the plugin stays involved."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "73ec12cb6ef2cee8",
-      "text": "<h3> Plugin Parameters"
+      "text": "<h3>Plugin Parameters</h3>"
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "3304b4410ba78341",
       "text": "Commands run by the clock have available to them an array with [sec, min, hr] as a parameter. Say <b>A</b> to access the whole parameter or say <b>A0</b>, <b>A1</b> or <b>A2</b> to access the individual elements."
     },
@@ -117,22 +117,22 @@
       "text": "Commands run by THUMB has a key as a parameter which can be a number."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "d2632542e802a519",
       "text": "Numbers can be accessed as bits, <b>B0</b>, <b>B1</b>, <b>B2</b> and so on from the least significant bit."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "b0331a8e789bc55e",
       "text": "Numbers or strings can be accessed as characters, <b>C0</b>, <b>C1</b>, <b>C2</b> and so on from the left most character. The ASCII value of the character is returned."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "22cfc1dd5098a268",
       "text": "Numbers can be accessed as digits, <b>D0</b>, <b>D1</b>, <b>D2</b> and so on from the units integer postion. Digits are represented by their ASCII values."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "4bc2e2e9c84584c3",
       "text": "Other all-caps words refer to Txtzyme fragments that may include parameter accessors. For example <b>FOO/43</b> calls FOO and sets the parameter to 43. To specify a parameter include it after the defined name separated by a slash. <b>FOO/B3</b> passes forward one bit of the current parameter."
     },
@@ -1433,6 +1433,137 @@
         "text": "As a rule of thumb, think of upper-case as talking to the Txtzyme plugin in the browser with everything else going to the Txtzyme interpreter in the microcontroller."
       },
       "date": 1408471516732
+    },
+    {
+      "type": "edit",
+      "id": "9da8e83e2ed8ed29",
+      "item": {
+        "type": "html",
+        "id": "9da8e83e2ed8ed29",
+        "text": "<h3> Plugin Commands"
+      },
+      "date": 1418372333002
+    },
+    {
+      "type": "edit",
+      "id": "9da8e83e2ed8ed29",
+      "item": {
+        "type": "html",
+        "id": "9da8e83e2ed8ed29",
+        "text": "<h3>Plugin Commands</h3>"
+      },
+      "date": 1418372340160
+    },
+    {
+      "type": "edit",
+      "id": "135f1d15190fa48a",
+      "item": {
+        "type": "html",
+        "id": "135f1d15190fa48a",
+        "text": "Say <b>SECOND</b>, <b>MINUTE</b>, <b>HOUR</b> and <b>DAY</b> to run repeatedly throughout the day."
+      },
+      "date": 1418372342697
+    },
+    {
+      "type": "edit",
+      "id": "3cfe3fbd4b43138d",
+      "item": {
+        "type": "html",
+        "id": "3cfe3fbd4b43138d",
+        "text": "Say <b>OPEN</b> to run when the server connection is opened."
+      },
+      "date": 1418372345826
+    },
+    {
+      "type": "edit",
+      "id": "e2e5e2c6745c6825",
+      "item": {
+        "type": "html",
+        "id": "e2e5e2c6745c6825",
+        "text": "Say <b>THUMB</b> to run when scrubbing wiki data."
+      },
+      "date": 1418372346993
+    },
+    {
+      "type": "edit",
+      "id": "ac38149d1c537128",
+      "item": {
+        "type": "html",
+        "id": "ac38149d1c537128",
+        "text": "Say <b>NL</b> to run the program so far generated. (NL is short for newline, the traditional Txtzyme go command.)"
+      },
+      "date": 1418372348697
+    },
+    {
+      "type": "edit",
+      "id": "73ec12cb6ef2cee8",
+      "item": {
+        "type": "html",
+        "id": "73ec12cb6ef2cee8",
+        "text": "<h3> Plugin Parameters"
+      },
+      "date": 1418372355451
+    },
+    {
+      "type": "edit",
+      "id": "73ec12cb6ef2cee8",
+      "item": {
+        "type": "html",
+        "id": "73ec12cb6ef2cee8",
+        "text": "<h3>Plugin Parameters</h3>"
+      },
+      "date": 1418372362953
+    },
+    {
+      "type": "edit",
+      "id": "3304b4410ba78341",
+      "item": {
+        "type": "html",
+        "id": "3304b4410ba78341",
+        "text": "Commands run by the clock have available to them an array with [sec, min, hr] as a parameter. Say <b>A</b> to access the whole parameter or say <b>A0</b>, <b>A1</b> or <b>A2</b> to access the individual elements."
+      },
+      "date": 1418372365297
+    },
+    {
+      "type": "edit",
+      "id": "d2632542e802a519",
+      "item": {
+        "type": "html",
+        "id": "d2632542e802a519",
+        "text": "Numbers can be accessed as bits, <b>B0</b>, <b>B1</b>, <b>B2</b> and so on from the least significant bit."
+      },
+      "date": 1418372368937
+    },
+    {
+      "type": "edit",
+      "id": "b0331a8e789bc55e",
+      "item": {
+        "type": "html",
+        "id": "b0331a8e789bc55e",
+        "text": "Numbers or strings can be accessed as characters, <b>C0</b>, <b>C1</b>, <b>C2</b> and so on from the left most character. The ASCII value of the character is returned."
+      },
+      "date": 1418372370657
+    },
+    {
+      "type": "edit",
+      "id": "22cfc1dd5098a268",
+      "item": {
+        "type": "html",
+        "id": "22cfc1dd5098a268",
+        "text": "Numbers can be accessed as digits, <b>D0</b>, <b>D1</b>, <b>D2</b> and so on from the units integer postion. Digits are represented by their ASCII values."
+      },
+      "date": 1418372372040
+    },
+    {
+      "type": "edit",
+      "id": "4bc2e2e9c84584c3",
+      "item": {
+        "type": "html",
+        "id": "4bc2e2e9c84584c3",
+        "text": "Other all-caps words refer to Txtzyme fragments that may include parameter accessors. For example <b>FOO/43</b> calls FOO and sets the parameter to 43. To specify a parameter include it after the defined name separated by a slash. <b>FOO/B3</b> passes forward one bit of the current parameter."
+      },
+      "date": 1418372373552
     }
-  ]
+  ],
+  "plugin": "txtzyme"
 }

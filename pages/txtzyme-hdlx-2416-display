@@ -216,17 +216,12 @@
       "text": "This application shows how random access to the display is possible and the general responsiveness of the Txtzyme plugin. It includes three handlers."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "ef635480c8a9765f",
       "text": "On <b>OPEN</b> clears the display, adds colon."
     },
     {
-      "type": "paragraph",
-      "id": "5099a83f08bad61c",
-      "text": "On <b>SECOND</b> update the seconds in the right two digits."
-    },
-    {
-      "type": "paragraph",
+      "type": "html",
       "id": "99d9797f149cd96d",
       "text": "On <b>THUMB</b> update left digit by 2<sup>16</sup> msec."
     },
@@ -236,17 +231,12 @@
       "text": "The application defines device pins and several operatons that signal device registers through the pins."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "7b8d0ce2f0aa85b4",
       "text": "Say <b>ADR</b> to address a character, 0 through 3."
     },
     {
-      "type": "paragraph",
-      "id": "4d2d6e4270577322",
-      "text": "Say <b>CHR</b> to write a character, 7-bit ascii."
-    },
-    {
-      "type": "paragraph",
+      "type": "html",
       "id": "18a70f73617237e1",
       "text": "Say <b>DIM</b> to adjust brightness, 0 bright through 7 dim."
     },
@@ -254,6 +244,16 @@
       "type": "paragraph",
       "id": "0a1780149bd6b09e",
       "text": "This application has been inspired by and adapted from the yow! program first written in c and then translated to perl/Txtzyme."
+    },
+    {
+      "type": "html",
+      "id": "5099a83f08bad61c",
+      "text": "On <b>SECOND</b> update the seconds in the right two digits."
+    },
+    {
+      "type": "html",
+      "id": "4d2d6e4270577322",
+      "text": "Say <b>CHR</b> to write a character, 7-bit ascii."
     },
     {
       "type": "image",
@@ -2209,6 +2209,109 @@
       ],
       "id": "fc87f9b49c118a4b",
       "date": 1361407512170
+    },
+    {
+      "type": "edit",
+      "id": "ef635480c8a9765f",
+      "item": {
+        "type": "html",
+        "id": "ef635480c8a9765f",
+        "text": "On <b>OPEN</b> clears the display, adds colon."
+      },
+      "date": 1418372643270
+    },
+    {
+      "type": "move",
+      "order": [
+        "0948ffff60983085",
+        "f94fba950cb2e66c",
+        "bafdb5e64d92b391",
+        "8f57e52f5043338c",
+        "ef635480c8a9765f",
+        "99d9797f149cd96d",
+        "ece9f58774d15a3d",
+        "7b8d0ce2f0aa85b4",
+        "4d2d6e4270577322",
+        "18a70f73617237e1",
+        "0a1780149bd6b09e",
+        "5099a83f08bad61c",
+        "fc87f9b49c118a4b",
+        "38b9c00cafbf4871"
+      ],
+      "id": "5099a83f08bad61c",
+      "date": 1418372644373
+    },
+    {
+      "type": "edit",
+      "id": "99d9797f149cd96d",
+      "item": {
+        "type": "html",
+        "id": "99d9797f149cd96d",
+        "text": "On <b>THUMB</b> update left digit by 2<sup>16</sup> msec."
+      },
+      "date": 1418372644630
+    },
+    {
+      "type": "edit",
+      "id": "7b8d0ce2f0aa85b4",
+      "item": {
+        "type": "html",
+        "id": "7b8d0ce2f0aa85b4",
+        "text": "Say <b>ADR</b> to address a character, 0 through 3."
+      },
+      "date": 1418372647285
+    },
+    {
+      "type": "move",
+      "order": [
+        "0948ffff60983085",
+        "f94fba950cb2e66c",
+        "bafdb5e64d92b391",
+        "8f57e52f5043338c",
+        "ef635480c8a9765f",
+        "99d9797f149cd96d",
+        "ece9f58774d15a3d",
+        "7b8d0ce2f0aa85b4",
+        "18a70f73617237e1",
+        "0a1780149bd6b09e",
+        "5099a83f08bad61c",
+        "4d2d6e4270577322",
+        "fc87f9b49c118a4b",
+        "38b9c00cafbf4871"
+      ],
+      "id": "4d2d6e4270577322",
+      "date": 1418372648548
+    },
+    {
+      "type": "edit",
+      "id": "18a70f73617237e1",
+      "item": {
+        "type": "html",
+        "id": "18a70f73617237e1",
+        "text": "Say <b>DIM</b> to adjust brightness, 0 bright through 7 dim."
+      },
+      "date": 1418372649933
+    },
+    {
+      "type": "edit",
+      "id": "5099a83f08bad61c",
+      "item": {
+        "type": "html",
+        "id": "5099a83f08bad61c",
+        "text": "On <b>SECOND</b> update the seconds in the right two digits."
+      },
+      "date": 1418372655077
+    },
+    {
+      "type": "edit",
+      "id": "4d2d6e4270577322",
+      "item": {
+        "type": "html",
+        "id": "4d2d6e4270577322",
+        "text": "Say <b>CHR</b> to write a character, 7-bit ascii."
+      },
+      "date": 1418372656709
     }
-  ]
+  ],
+  "plugin": "txtzyme"
 }

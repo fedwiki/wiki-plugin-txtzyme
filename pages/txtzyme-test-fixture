@@ -7,14 +7,14 @@
       "text": "The Txtzyme plugin is distributed with examples for an appropriately configured Teensy 2 microcontroller."
     },
     {
-      "type": "paragraph",
-      "id": "f2b77a29e9531d62",
-      "text": ""
+      "type": "html",
+      "id": "8b6ce319521b110b",
+      "text": "<h3>Devices</h3>"
     },
     {
       "type": "paragraph",
-      "id": "8b6ce319521b110b",
-      "text": "<h3> Devices"
+      "id": "f2b77a29e9531d62",
+      "text": ""
     },
     {
       "type": "paragraph",
@@ -42,9 +42,9 @@
       "text": ""
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "3fc84a305abcdb8b",
-      "text": "<h3> Interpreter"
+      "text": "<h3>Interpreter</h3>"
     },
     {
       "type": "paragraph",
@@ -458,6 +458,68 @@
         "text": "Paul Stoffregen describes how to connect a Teensy and load a program using the part's preprogrammed boot loader and the download program he provides. [https://www.pjrc.com/teensy/first_use.html webpage]"
       },
       "date": 1408463659965
+    },
+    {
+      "type": "edit",
+      "id": "8b6ce319521b110b",
+      "item": {
+        "type": "html",
+        "id": "8b6ce319521b110b",
+        "text": "<h3> Devices"
+      },
+      "date": 1418372723492
+    },
+    {
+      "type": "move",
+      "order": [
+        "1e3d2a0b272cd380",
+        "8b6ce319521b110b",
+        "f2b77a29e9531d62",
+        "d85c7017082dcedf",
+        "d0d9a106172d9f61",
+        "c5b03f82d4573727",
+        "c60b9d4912f7456a",
+        "8ea0bcf366c6b057",
+        "3fc84a305abcdb8b",
+        "9a24e4cfe3544d76",
+        "98f4853bba7801c1",
+        "0a4c545e92d78b68",
+        "23cdc69e283c179b",
+        "0df6e95147a9573e"
+      ],
+      "id": "8b6ce319521b110b",
+      "date": 1418372724377
+    },
+    {
+      "type": "edit",
+      "id": "8b6ce319521b110b",
+      "item": {
+        "type": "html",
+        "id": "8b6ce319521b110b",
+        "text": "<h3>Devices</h3>"
+      },
+      "date": 1418372732953
+    },
+    {
+      "type": "edit",
+      "id": "3fc84a305abcdb8b",
+      "item": {
+        "type": "html",
+        "id": "3fc84a305abcdb8b",
+        "text": "<h3> Interpreter"
+      },
+      "date": 1418372739089
+    },
+    {
+      "type": "edit",
+      "id": "3fc84a305abcdb8b",
+      "item": {
+        "type": "html",
+        "id": "3fc84a305abcdb8b",
+        "text": "<h3>Interpreter</h3>"
+      },
+      "date": 1418372746384
     }
-  ]
+  ],
+  "plugin": "txtzyme"
 }

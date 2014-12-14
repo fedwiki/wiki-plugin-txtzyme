@@ -47,9 +47,9 @@
       "text": "This works from OS X's Terminal program."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "ecfddbfa36248526",
-      "text": "<h3>Morse Code"
+      "text": "<h3>Morse Code</h3>"
     },
     {
       "type": "paragraph",
@@ -57,9 +57,9 @@
       "text": "You'll want to try something with your new Txtzyme interpreter. I've worked up a half-dozen sample projects and shared them on GitHub. The first ever project used simple programs like these to blink Morse code (o for output, m for millisecond delay):\n"
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "7fbd952c6ab7980b",
-      "text": "<pre>1o 50m 0o 50m for dot\n1o 150m 0o 50m for dash"
+      "text": "<pre>1o 50m 0o 50m for dot\n1o 150m 0o 50m for dash</pre>"
     },
     {
       "type": "paragraph",
@@ -539,6 +539,47 @@
       "type": "fork",
       "site": "txtzyme.com",
       "date": 1408463177205
+    },
+    {
+      "type": "edit",
+      "id": "ecfddbfa36248526",
+      "item": {
+        "type": "html",
+        "id": "ecfddbfa36248526",
+        "text": "<h3>Morse Code"
+      },
+      "date": 1418372495691
+    },
+    {
+      "type": "edit",
+      "id": "ecfddbfa36248526",
+      "item": {
+        "type": "html",
+        "id": "ecfddbfa36248526",
+        "text": "<h3>Morse Code</h3>"
+      },
+      "date": 1418372503970
+    },
+    {
+      "type": "edit",
+      "id": "7fbd952c6ab7980b",
+      "item": {
+        "type": "html",
+        "id": "7fbd952c6ab7980b",
+        "text": "<pre>1o 50m 0o 50m for dot\n1o 150m 0o 50m for dash"
+      },
+      "date": 1418372508435
+    },
+    {
+      "type": "edit",
+      "id": "7fbd952c6ab7980b",
+      "item": {
+        "type": "html",
+        "id": "7fbd952c6ab7980b",
+        "text": "<pre>1o 50m 0o 50m for dot\n1o 150m 0o 50m for dash</pre>"
+      },
+      "date": 1418372519041
     }
-  ]
+  ],
+  "plugin": "txtzyme"
 }

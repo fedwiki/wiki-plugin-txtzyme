@@ -7,9 +7,9 @@
       "text": "We will show how features of Txtzyme work with features of the Txtzyme plugin to do some interesting things with little or no additional hardware. See [[Txtzyme Test Fixture]] to understand what must be connected to run these examples."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "e6b023bfab84bc06",
-      "text": "<h3> In Wiki"
+      "text": "<h3>In Wiki</h3>"
     },
     {
       "type": "image",
@@ -19,7 +19,7 @@
       "text": "Txtzyme running on Teensy 2 driven by Raspberry Pi running Node.js version of SFW. Blink, Morse Code, Oscilloscope and HDLX Display examples run with this hardware."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "6a7018752995632d",
       "text": "[[Txtzyme Blink]] is the Hello World of microcontroller circuits. We blink once a second and whenever the <i>thumb</i> event triggers."
     },
@@ -39,9 +39,9 @@
       "text": "[[Txtzyme HDLX-2416 Display]] has four characters with built-in character ROM and internal brightness control."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "cd2614d3bd61f020",
-      "text": "<h3> And Beyond"
+      "text": "<h3>And Beyond</h3>"
     },
     {
       "type": "paragraph",
@@ -301,6 +301,67 @@
         "text": "We will show how features of Txtzyme work with features of the Txtzyme plugin to do some interesting things with little or no additional hardware. See [[Txtzyme Test Fixture]] to understand what must be connected to run these examples."
       },
       "date": 1374376429593
+    },
+    {
+      "type": "edit",
+      "id": "e6b023bfab84bc06",
+      "item": {
+        "type": "paragraph",
+        "id": "e6b023bfab84bc06",
+        "text": "<h3>In Wiki</h3>"
+      },
+      "date": 1418372457819
+    },
+    {
+      "type": "edit",
+      "id": "6a7018752995632d",
+      "item": {
+        "type": "html",
+        "id": "6a7018752995632d",
+        "text": "[[Txtzyme Blink]] is the Hello World of microcontroller circuits. We blink once a second and whenever the <i>thumb</i> event triggers."
+      },
+      "date": 1418372460429
+    },
+    {
+      "type": "edit",
+      "id": "e6b023bfab84bc06",
+      "item": {
+        "type": "html",
+        "id": "e6b023bfab84bc06",
+        "text": "<h3>In Wiki</h3>"
+      },
+      "date": 1418372467068
+    },
+    {
+      "type": "edit",
+      "id": "e6b023bfab84bc06",
+      "item": {
+        "type": "html",
+        "id": "e6b023bfab84bc06",
+        "text": "<h3>In Wiki</h3>"
+      },
+      "date": 1418372467070
+    },
+    {
+      "type": "edit",
+      "id": "cd2614d3bd61f020",
+      "item": {
+        "type": "html",
+        "id": "cd2614d3bd61f020",
+        "text": "<h3> And Beyond"
+      },
+      "date": 1418372469828
+    },
+    {
+      "type": "edit",
+      "id": "cd2614d3bd61f020",
+      "item": {
+        "type": "html",
+        "id": "cd2614d3bd61f020",
+        "text": "<h3>And Beyond</h3>"
+      },
+      "date": 1418372476783
     }
-  ]
-  }
+  ],
+  "plugin": "txtzyme"
+}
