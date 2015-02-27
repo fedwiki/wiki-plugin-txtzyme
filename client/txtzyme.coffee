@@ -1,3 +1,10 @@
+###
+ * Federated Wiki : Txtzyme Plugin
+ *
+ * Licensed under the MIT license.
+ * https://github.com/fedwiki/wiki-plugin-txtzyme/blob/master/LICENSE.txt
+###
+
 parse = (text) ->
   defn = {}
   for line in text.split /\n+/
