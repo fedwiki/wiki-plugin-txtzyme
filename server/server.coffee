@@ -1,5 +1,12 @@
+###
+ * Federated Wiki : Txtzyme Plugin
+ *
+ * Licensed under the MIT license.
+ * https://github.com/fedwiki/wiki-plugin-txtzyme/blob/master/LICENSE.txt
+###
+
 # txtzyme device uses teensy's usb serial
-# http://www.pjrc.com/teensy/usb_serial.html 
+# http://www.pjrc.com/teensy/usb_serial.html
 
 WebSocketServer = require('ws').Server
 fs = require 'fs'
