@@ -28,7 +28,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "event-stream": "*",
+    "event-stream": "3.3.4",
     "ws": "*"
   },
   "devDependencies": {
